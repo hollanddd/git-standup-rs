@@ -1,6 +1,6 @@
 [package]
 name = "git-standup"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["git-standup-rs contributors"]
 description = "Recall what you did on the last working day - a Rust port of git-standup"
