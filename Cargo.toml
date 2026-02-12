@@ -1,0 +1,21 @@
+[package]
+name = "git-standup"
+version = "0.1.0"
+edition = "2021"
+authors = ["git-standup-rs contributors"]
+description = "Recall what you did on the last working day - a Rust port of git-standup"
+license = "MIT"
+repository = "https://github.com/example/git-standup-rs"
+keywords = ["git", "standup", "cli", "productivity"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+chrono = "0.4"
+colored = "2"
+walkdir = "2"
+anyhow = "1"
+
+[[bin]]
+name = "git-standup"
+path = "src/main.rs"
