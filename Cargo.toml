@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["git-standup-rs contributors"]
 description = "Recall what you did on the last working day - a Rust port of git-standup"
 license = "MIT"
-repository = "https://github.com/example/git-standup-rs"
+repository = "https://github.com/hollanddd/git-standup-rs"
 keywords = ["git", "standup", "cli", "productivity"]
 categories = ["command-line-utilities", "development-tools"]
 
@@ -19,3 +19,7 @@ anyhow = "1"
 [[bin]]
 name = "git-standup"
 path = "src/main.rs"
+
+[profile.release]
+strip = true
+lto = true
