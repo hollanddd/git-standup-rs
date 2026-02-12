@@ -10,7 +10,7 @@ pub fn find_git_repos(base_dir: &Path, args: &Args) -> Result<Vec<PathBuf>> {
     let mut repos = Vec::new();
 
     // Check for whitelist file
-    let whitelist_path = base_dir.join(".git-standup-whitelist");
+    let whitelist_path = base_dir.join(".git-standup-ignore");
     let search_paths: Vec<PathBuf> = if whitelist_path.exists() {
         fs::read_to_string(&whitelist_path)?
             .lines()
